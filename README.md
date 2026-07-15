@@ -9,6 +9,12 @@ Expense Tracker is a simple personal finance application where users can log in,
 
  This project was built using **Spring Boot** to learn core concepts such as **REST APIs, Thymeleaf, session management, Spring Data JPA, and MySQL database integration**.
 
+ 
+ **DEMO**
+## 🎥 Demo
+
+[![Expense Tracker Demo]("demo_thumbnail.png")](https://youtu.be/19CD0bmDI4E)
+
 **Features**
 
 
@@ -41,7 +47,4 @@ Expense Tracker is a simple personal finance application where users can log in,
 
 📱 Fully responsive mobile layout
 
-**DEMO**
-## 🎥 Demo
 
-[![Expense Tracker Demo]("demo_thumbnail.png")](https://youtu.be/19CD0bmDI4E)

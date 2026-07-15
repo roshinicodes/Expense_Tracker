@@ -1,0 +1,75 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px ;
+}
+
+.page
+{
+    width:500px;
+    height:500px;
+     border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.details
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:20px;
+}
+.details input
+{
+    width:250px;
+    height:40px;
+    border-radius: 10px;
+}
+.details label{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+
+}
+.details ::placeholder
+{
+    text-align: center;
+}
+.button
+{
+    padding-top: 30px;
+}
+.button button{
+
+    width:300px;
+    height:40px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    border: none;
+}
+
+.login-btn
+{
+     color:white;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.login-btn:hover
+{
+    background-color: rgb(63, 9, 114);
+}
+.footnote
+{
+  font-family: Arial, Helvetica, sans-serif;
+}

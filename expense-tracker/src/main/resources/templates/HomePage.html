@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home · Ledger</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" th:href="@{/css/HomeStyle.css}">
+</head>
+<body>
+<div class="container">
+    <div class="page">
+        <div class="title">
+            <h2>Expense Tracker</h2>
+        </div>
+
+        <div class="available">
+            <h3>Your Balance</h3>
+            <p th:text="'Rs:' + ${balance}">Rs:0</p>
+        </div>
+
+        <div class="income-expense">
+            <div class="income">
+                <h4>Income</h4>
+                <p th:text="'Rs:' + ${income}">Rs:0</p>
+            </div>
+            <div class="expense">
+                <h4>Expenses</h4>
+                <p th:text="'Rs:' + ${expense}">Rs:0</p>
+            </div>
+        </div>
+
+        <div class="transaction">
+            <h4>Add Transaction</h4>
+
+            <form th:action="@{/transactions}" method="post">
+                <label for="description" class="label">Description</label>
+                <input type="text" id="description" name="description" placeholder="Enter description">
+
+                <label for="amount" class="label">
+                    Amount
+                    <p>(negative - expense, positive - income)</p>
+                </label>
+                <input type="number" id="amount" name="amount" placeholder="Enter amount">
+
+                <button type="submit" class="add-btn">Add Transaction</button>
+            </form>
+
+            <a href="/history"><button type="button" class="history-btn">View History</button></a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

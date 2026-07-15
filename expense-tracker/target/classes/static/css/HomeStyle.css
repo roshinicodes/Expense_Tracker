@@ -1,0 +1,210 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     padding-top: 15px;
+
+}
+.page
+{
+    width:500px;
+    min-height:550px;
+    height: auto;
+    border-radius: 20px;
+     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    display:flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex-direction: column;
+     gap: 15px;
+    padding: 20px 25px;
+    background-color: rgb(245, 245, 245);
+
+}
+
+.title h2
+{
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(148, 57, 233);
+
+    margin-bottom: 10px;
+}
+.available
+{
+   width:250px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:5px;
+    margin-bottom: 5px;
+}
+.available h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.available p{
+    font-family: 'Times New Roman', Times, serif;
+       color: rgb(148, 57, 233);
+       font-size: 22px;
+       font-weight: bolder;
+}
+.income-expense
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap:30px;
+}
+.income{
+
+    width:200px;
+    height:60px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+
+    background-color:rgb(189, 235, 189) ;
+    box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.25);
+}
+.income h4{
+
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding-bottom: 3px;
+
+}
+.income p{
+    font-weight:bolder;
+    font-size: 18px;
+     font-family: 'Times New Roman', Times, serif;
+}
+.expense
+{
+     width:200px;
+     height:60px;
+
+     background-color: rgb(250, 187, 187);
+    border-radius: 10px;
+    text-align: center;
+     padding-top: 10px;
+      box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.25);
+}
+.expense h4{
+
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 18px;
+     padding-bottom: 3px;
+
+}
+.expense p{
+
+     font-weight:bolder;
+    font-size: 18px;
+     font-family: 'Times New Roman', Times, serif;
+}
+.transaction {
+    width: 390px;
+
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px 25px;
+    gap: 0;
+}
+
+.transaction h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(148, 57, 233);
+    margin-bottom: 20px;
+}
+
+.label {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(30, 30, 30);
+    margin-bottom: 6px;
+}
+
+.label p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(120, 120, 120);
+    margin-top: 2px;
+}
+
+#description {
+    margin-bottom: 20px;
+}
+
+#amount {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: rgb(148, 57, 233);
+}
+
+.add-btn {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    background-color: rgb(148, 57, 233);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.add-btn:hover{
+
+      background-color: rgb(126, 20, 224);
+
+}
+
+.history-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: white;
+    color: rgb(148, 57, 233);
+    border: 2px solid rgb(148, 57, 233);
+    border-radius: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.history-btn:hover{
+     background-color: rgb(126, 20, 224);
+     color:white;
+}

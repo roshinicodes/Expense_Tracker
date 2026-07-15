@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.page {
+    width: 500px;
+    min-height: 550px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 25px;
+    background-color: rgb(245, 245, 245);
+}
+
+.title h2 {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(148, 57, 233);
+    margin-bottom: 10px;
+}
+
+.tx-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tx-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 14px 18px;
+    box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tx-desc {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(30, 30, 30);
+}
+
+.tx-amount {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.tx-amount.positive {
+    color: rgb(46, 160, 67);
+}
+
+.tx-amount.negative {
+    color: rgb(214, 60, 60);
+}
+
+.empty-msg {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(120, 120, 120);
+    text-align: center;
+    padding: 30px 0;
+}
+
+.back-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: white;
+    color: rgb(148, 57, 233);
+    border: 2px solid rgb(148, 57, 233);
+    border-radius: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: rgb(126, 20, 224);
+    color: white;
+}

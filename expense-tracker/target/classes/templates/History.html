@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History · Ledger</title>
+    <link rel="stylesheet" th:href="@{/css/HistoryStyle.css}">
+</head>
+<body>
+<div class="container">
+    <div class="page">
+
+        <div class="title">
+            <h2>Transaction History</h2>
+        </div>
+
+        <div class="tx-list">
+
+            <div class="tx-item" th:each="t : ${transactions}">
+                <div class="tx-info">
+                    <p class="tx-desc" th:text="${t.description}">Description</p>
+                </div>
+                <p class="tx-amount"
+                   th:text="${t.amount}"
+                   th:classappend="${t.amount lt 0} ? 'negative' : 'positive'">0</p>
+            </div>
+
+            <p class="empty-msg" th:if="${transactions.isEmpty()}">No transactions yet.</p>
+
+        </div>
+
+        <a href="/home"><button type="button" class="back-btn">Back to Home</button></a>
+
+    </div>
+</div>
+</body>
+</html>

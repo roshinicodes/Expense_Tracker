@@ -44,4 +44,4 @@ Expense Tracker is a simple personal finance application where users can log in,
 **DEMO**
 ## 🎥 Demo
 
-[![Expense Tracker Demo]("D:\Java_notes_accord\demo_thumbnail.png")](https://youtu.be/19CD0bmDI4E)
+[![Expense Tracker Demo]("demo_thumbnail.png")](https://youtu.be/19CD0bmDI4E)
